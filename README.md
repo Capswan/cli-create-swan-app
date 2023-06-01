@@ -1,6 +1,15 @@
 # create-swan-app
 > JS (not Typescript), React, NextJS, Tailwind & Flowbite and more
 
+## Getting Started
+
+```
+$ cd create-swan-app
+$ npm install
+$ npm link create-swan-app --local
+```
+See more info about Pastel and CLI output [here](./docs/pastel.md)
+
 ## Dependencies
 ![diagram](./docs/images/diagram.svg)
 
@@ -32,43 +41,6 @@
 | Name | Description | Type | 
 |:-----|:------------|:---------|
 | [Vercel](https://vercel.com/) | AWS wrapper platform & the company behind NextJS | Default |  
-| [OpenFaaS](https://www.openfaas.com/) | [Custom Express server](https://nextjs.org/docs/pages/building-your-application/configuring/custom-server) for non-Vercel targets  | Optional | 
+| *[OpenFaaS](https://www.openfaas.com/) | Currently generates a [Custom Express server](https://nextjs.org/docs/pages/building-your-application/configuring/custom-server) for non-Vercel targets.   | Optional | 
 
-## Getting Started
-
-### Initialization 
-```
-Pastel app created in create-swan-app:
-$ cd create-swan-app
-
-Build:
-$ npm run build
-
-Watch and rebuild:
-$ npm run dev
-
-Run:
-$ create-swan-app
-```
-
-### Install
-
-```bash
-$ npm install --global create-swan-app
-```
-
-### CLI Usage
-
-```
-$ create-swan-app --help
-
-  Usage
-    $ create-swan-app
-
-  Options
-    --name  Your name
-
-  Examples
-    $ create-swan-app --name=Jane
-    Hello, Jane
-```
+> *In future may bundle additional stack-specific context (eg. Dockerfile). Not required to use with OpenFaaS specifically, just our deploy target
