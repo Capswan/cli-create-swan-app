@@ -6,9 +6,13 @@
 ```
 $ cd create-swan-app
 $ npm install
+$ npm run build
 $ npm link create-swan-app --local
 ```
 See more info about Pastel and CLI output [here](./docs/pastel.md)
+
+### Link Ouptut
+![npm link and run](./docs/images/link-and-run.png)
 
 ## Dependencies
 ![diagram](./docs/images/diagram.svg)
