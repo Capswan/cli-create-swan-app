@@ -1,4 +1,5 @@
 # Logs
+new-cs-app
 logs
 *.log
 npm-debug.log*
