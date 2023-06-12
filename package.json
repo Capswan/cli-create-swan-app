@@ -1,0 +1,28 @@
+{
+  "name": "cli-create-swan-app",
+  "version": "1.0.0",
+  "main": "./generators/app/index.js",
+  "files": [
+    "generators",
+    "app"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Capswan/cli-create-swan-app.git"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Capswan/cli-create-swan-app/issues"
+  },
+  "homepage": "https://github.com/Capswan/cli-create-swan-app#readme",
+  "dependencies": {
+    "yeoman-generator": "^5.9.0"
+  }
+}
