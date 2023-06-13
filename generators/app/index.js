@@ -52,10 +52,12 @@ module.exports = class extends Generator {
   install() {
     const { name, flowbite, jsdoc, mdx, tailwind, description, strapi } = this.props
 
-    const namePath = (!strapi) ? name : name + '/' + name
-    (strapi)
-      ? execSync(`mkdir -p ./${name}/${name}`)
-      : execSync(`mkdir ${name}`)
+    const namePath = (strapi) ? (name + '/' + name) : name
+    if (strapi) {
+      execSync(`mkdir -p ./${namePath}`)
+    } else {
+      execSync(`mkdir ${name}`)
+    }
 
     this.fs.copyTpl(
       this.templatePath('next-template'),
