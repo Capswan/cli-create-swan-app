@@ -54,7 +54,8 @@ module.exports = class extends Generator {
 
     const namePath = (strapi) ? (name + '/' + name) : name
     if (strapi) {
-      execSync(`mkdir -p ./${namePath}`)
+      execSync(`mkdir ${name}`)
+      execSync(`mkdir ${name}/${name}`)
     } else {
       execSync(`mkdir ${name}`)
     }
