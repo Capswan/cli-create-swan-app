@@ -1,4 +1,5 @@
 const Generator = require('yeoman-generator')
+const shell = require('shelljs')
 const { execSync } = require('child_process')
 
 module.exports = class extends Generator {
@@ -54,8 +55,7 @@ module.exports = class extends Generator {
 
     const namePath = (strapi) ? (name + '/' + name) : name
     if (strapi) {
-      execSync(`mkdir ${name}`)
-      execSync(`mkdir ${name}/${name}`)
+      shell.mkdir('-p', namePath)
     } else {
       execSync(`mkdir ${name}`)
     }
